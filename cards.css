@@ -1,0 +1,59 @@
+body {
+  display: flex;
+  width: 80vw;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  margin: 10vw 5vh;
+}
+body div {
+  display: flex;
+  width: 20vw;
+  height: 50vh;
+  transition: 0.5s;
+  position: relative;
+  font-size: 1vw;
+  font-style: oblique;
+  text-shadow: 1px 1px 3px;
+  box-shadow: -2px -2px 3px 1px rgba(80, 80, 80, 0.7);
+}
+.box2 {
+  left: -5vw;
+}
+.box3 {
+  left: -10vw;
+}
+.box4 {
+  left: -15vw;
+}
+.box5 {
+  left: -20vw;
+}
+/* body div:not(:first-child) {
+  left: -5vw;
+} */
+body div:nth-child(odd) {
+  background: rgb(136, 109, 236);
+}
+body div:nth-child(even) {
+  background: red;
+}
+body div:hover {
+  box-shadow: 2px 2px 3px 1px rgba(80, 80, 80, 0.7);
+  transform: scale(1.05);
+  z-index: 10;
+}
+body div:hover span {
+  display: none;
+}
+body div:hover::before {
+  content: "Hello";
+  display: flex;
+  width: 100%;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vh;
+  font-weight: 600;
+  /* margin: 10vw; */
+}
