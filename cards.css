@@ -20,6 +20,12 @@ body div {
 .box2 {
   left: -5vw;
 }
+.float {
+  float: right;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+}
 .box3 {
   left: -10vw;
 }

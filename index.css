@@ -14,3 +14,9 @@ h1 {
   background-color: purple;
   /* filter: drop-shadow(3px 3px 0px rgba(90, 90, 90, 0.6)); */
 }
+#bottom {
+  width: 500px;
+  height: 200px;
+  background-color: black;
+  margin-top: 122vh;
+}
