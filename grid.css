@@ -1,8 +1,0 @@
-.grid-container {
-  display: grid;
-  /* grid-template-rows: auto; */
-  grid-template-columns: 10vh 10vh;
-  grid-template-rows: 100vw 30vw;
-  /* height: 100px; */
-  background: yellow;
-}
