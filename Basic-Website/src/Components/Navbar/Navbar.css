@@ -1,0 +1,15 @@
+.navbar-container {
+  width: 6.5%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: blue;
+  flex-direction: column;
+  min-width: 40px;
+}
+.navbar-container img {
+  max-width: 60%;
+  min-width: 30px;
+  /* margin-top: 100%; */
+}
