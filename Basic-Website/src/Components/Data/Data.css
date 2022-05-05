@@ -1,0 +1,17 @@
+.data-api-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: burlywood;
+  justify-content: center;
+  align-items: center;
+}
+.api-bar {
+  width: 90%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: rgb(232, 232, 232);
+}

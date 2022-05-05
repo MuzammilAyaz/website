@@ -3,6 +3,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Api from "./Components/Api/Api";
 import Info from "./Components/Info/Info";
+import Data from "./Components/Data/Data";
 // import { BrowserRouter as Router, NavLink, Routes } from "react-router-dom";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/api" element={<Api />}></Route>
           <Route path="/info" element={<Info />}></Route>
+          <Route path="/data" element={<Data />}></Route>
         </Routes>
       </div>
     </div>
