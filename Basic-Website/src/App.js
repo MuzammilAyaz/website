@@ -1,24 +1,35 @@
 import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Api from "./Components/Api/Api";
 import Info from "./Components/Info/Info";
 import Data from "./Components/Data/Data";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
+// import { HashRouter as Router, Route } from "react-router-dom";
 // import { BrowserRouter as Router, NavLink, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar></Navbar>
-
-      <div className="main-container">
-        <Routes>
-          <Route path="/api" element={<Api />}></Route>
-          <Route path="/info" element={<Info />}></Route>
-          <Route path="/data" element={<Data />}></Route>
-        </Routes>
+    <Router>
+      <div className="App">
+        <Navbar></Navbar>
+        <div className="main-container">
+          <Switch>
+            {/* <Route exact path="/">
+              <Api></Api>
+            </Route> */}
+            <Route path="/api">
+              <Api></Api>
+            </Route>
+            <Route path="/info">
+              <Info></Info>
+            </Route>
+            <Route path="/data">
+              <Data></Data>
+            </Route>
+          </Switch>
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 

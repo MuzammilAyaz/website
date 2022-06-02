@@ -1,17 +1,16 @@
 import React from "react";
 import "./Api.css";
-import { Navigate, useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useHistory } from "react-router-dom";
 
 const Api = () => {
-  const navigate = useNavigate();
+  const navigate = useHistory();
   return (
     <div className="api-container">
       <div className="api-grid">
         <div
           className="content"
           onClick={() => {
-            navigate("/data");
+            navigate.push("/data");
           }}
         >
           Data
@@ -19,7 +18,7 @@ const Api = () => {
         <div
           className="content"
           onClick={() => {
-            navigate("/action");
+            navigate.push("/action");
           }}
         >
           Action
@@ -27,10 +26,10 @@ const Api = () => {
         <div
           className="content"
           onClick={() => {
-            navigate("/other");
+            navigate.push("/other");
           }}
         >
-          Other
+          Delete
         </div>
       </div>
     </div>
